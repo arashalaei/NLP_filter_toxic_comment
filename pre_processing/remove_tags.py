@@ -1,0 +1,13 @@
+# coding: utf-8
+import nltk
+import re
+from nltk import word_tokenize
+
+
+def remove_Tags(text):
+    """
+    take string input and clean string without tags.
+    use regex to remove the html tags.
+    """
+    cleaned_text = re.sub('<[^<]+?>', '', text)
+    return cleaned_text
