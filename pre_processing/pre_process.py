@@ -11,10 +11,8 @@ from pre_processing.world_tokenize import word_tokenize
 
 
 def pre_process(text):
-    """
-    """
     text = expand_contractions(text, contractions_dict)
-    text = autospell(text)
+    # text = autospell(text)
     text = to_lower(text)
     text = remove_numbers(text)
     text = remove_punct(text)

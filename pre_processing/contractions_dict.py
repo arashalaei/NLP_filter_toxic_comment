@@ -123,9 +123,7 @@ contractions_dict = {
 
 # 1)Expanding Contractions
 def expand_contractions(text, cd):
-    contractions_pattern = re.compile('({})'.format('|'.join(cd.keys())),
-                                      flags=re.IGNORECASE | re.DOTALL)
-
+    contractions_pattern = re.compile('({})'.format('|'.join(cd.keys())),flags=re.IGNORECASE | re.DOTALL)
     def expand_match(contraction):
         match = contraction.group(0)
         first_char = match[0]
