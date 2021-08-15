@@ -5,3 +5,4 @@ Many people think that artificial intelligence will one day replace humans and d
 
 ## Training dataset:
 The attached dataset contains two **rt-polarity.neg** and **rt-polarity.pos** files, which contain the negative and positive comments of a site, respectively.
+<img src="https://github.com/arashalaei/NLP_filter_toxic_comment/blob/master/res.png"/>
